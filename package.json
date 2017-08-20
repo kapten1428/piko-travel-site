@@ -1,0 +1,26 @@
+{
+  "name": "piko-travel-site",
+  "version": "1.0.0",
+  "description": "piko-travel-files",
+  "main": "index.js",
+  "scripts": {
+    "test": "piko-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapten1428/piko-travel-site.git"
+  },
+  "keywords": [
+    "piko"
+  ],
+  "author": "kapten1428",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kapten1428/piko-travel-site/issues"
+  },
+  "homepage": "https://github.com/kapten1428/piko-travel-site#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
+}
