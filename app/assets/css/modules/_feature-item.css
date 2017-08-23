@@ -15,7 +15,7 @@
 		@mixin atSmall{
 			position: absolute;
 			left: 0;
-
+			
 		}
 	}
 
