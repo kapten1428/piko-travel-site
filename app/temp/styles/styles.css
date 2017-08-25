@@ -1093,3 +1093,52 @@ Instead edit gulp/templates/sprites */
 			margin-bottom: 0
 	}
 	}
+
+.site-header{
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(47,85,114,.3);
+	width: 100%;
+	padding:10px 0;
+}
+
+.site-header__btn-container{
+		float: right;
+	}
+
+.site-header__logo{
+		position: absolute;
+		background: #2f5572;
+		padding:25px 36px;
+		top: 0;
+	}
+
+.primary-nav ul{
+		margin:0;
+		padding:0;
+	}
+
+.primary-nav ul::after{
+		content: " ";
+		clear: both;
+		display: block;
+	}
+
+.primary-nav li{
+		float: left;
+		list-style: none;
+		font-weight: 300;
+		padding-right: 20px;
+	}
+
+.primary-nav a{
+		text-decoration: none;
+		color: #ffffff;
+		display: block;
+		padding: 12px 0;
+
+	}
+
+.primary-nav--pull-right{
+		float: right;
+	}
