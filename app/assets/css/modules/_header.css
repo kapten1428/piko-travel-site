@@ -106,7 +106,7 @@
 			background-color: #fff;
 			transform-origin: 0 100% ;
 			transition: transform .3s ease-in;
-		};
+		}
 
 		@mixin atMedium{
 			display: none;
@@ -137,6 +137,7 @@
 			background-color: #fff;
 			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
 		}
+
 	}
 
 }

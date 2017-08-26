@@ -1242,7 +1242,7 @@ Instead edit gulp/templates/sprites */
 			transition: -webkit-transform .3s ease-in;
 			transition: transform .3s ease-in;
 			transition: transform .3s ease-in, -webkit-transform .3s ease-in;
-		};
+		}
 
 @media (min-width: 800px){
 

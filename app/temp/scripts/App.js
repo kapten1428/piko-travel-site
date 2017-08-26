@@ -74,9 +74,14 @@ var _MobileMenu = __webpack_require__(1);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
+var _RevealOnScroll = __webpack_require__(3);
+
+var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
+var revealOnScroll = new _RevealOnScroll2.default();
 
 /***/ }),
 /* 1 */
@@ -10387,6 +10392,25 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var RevealOnScroll = function RevealOnScroll() {
+  _classCallCheck(this, RevealOnScroll);
+};
+
+exports.default = RevealOnScroll;
 
 /***/ })
 /******/ ]);
