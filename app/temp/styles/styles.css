@@ -1350,3 +1350,13 @@ Instead edit gulp/templates/sprites */
 .primary-nav--pull-right{
 		float: right;
 	}
+
+.reveal-item{
+	opacity: 0;
+	-webkit-transition : opacity 1.2s ease-out;
+	transition : opacity 1.2s ease-out;
+}
+
+.reveal-item--is-visible{
+		opacity: 1;
+	}
