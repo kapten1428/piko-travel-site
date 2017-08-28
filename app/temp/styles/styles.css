@@ -1242,7 +1242,7 @@ Instead edit gulp/templates/sprites */
 			transition: -webkit-transform .3s ease-in;
 			transition: transform .3s ease-in;
 			transition: transform .3s ease-in, -webkit-transform .3s ease-in;
-		};
+		}
 
 @media (min-width: 800px){
 
@@ -1349,4 +1349,18 @@ Instead edit gulp/templates/sprites */
 
 .primary-nav--pull-right{
 		float: right;
+	}
+
+.reveal-item{
+	opacity: 0;
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition : all 1.2s ease-in;
+	transition : all 1.2s ease-in;
+}
+
+.reveal-item--is-visible{
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
