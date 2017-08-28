@@ -65,21 +65,6 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _MobileMenu = __webpack_require__(1);
-
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var mobileMenu = new _MobileMenu2.default();
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Rouzaliyana\\Desktop\\Sites\\piko-travel-site\\package.json'\n    at Error (native)\n    at Object.fs.openSync (fs.js:634:18)\n    at Object.fs.readFileSync (fs.js:502:33)\n    at ConfigChainBuilder.addConfig (C:\\Users\\Rouzaliyana\\Desktop\\Sites\\piko-travel-site\\node_modules\\babel-core\\lib\\transformation\\file\\options\\build-config-chain.js:146:32)\n    at ConfigChainBuilder.findConfigs (C:\\Users\\Rouzaliyana\\Desktop\\Sites\\piko-travel-site\\node_modules\\babel-core\\lib\\transformation\\file\\options\\build-config-chain.js:102:30)\n    at buildConfigChain (C:\\Users\\Rouzaliyana\\Desktop\\Sites\\piko-travel-site\\node_modules\\babel-core\\lib\\transformation\\file\\options\\build-config-chain.js:61:13)\n    at OptionManager.init (C:\\Users\\Rouzaliyana\\Desktop\\Sites\\piko-travel-site\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:354:58)\n    at File.initOptions (C:\\Users\\Rouzaliyana\\Desktop\\Sites\\piko-travel-site\\node_modules\\babel-core\\lib\\transformation\\file\\index.js:212:65)\n    at new File (C:\\Users\\Rouzaliyana\\Desktop\\Sites\\piko-travel-site\\node_modules\\babel-core\\lib\\transformation\\file\\index.js:135:24)\n    at Pipeline.transform (C:\\Users\\Rouzaliyana\\Desktop\\Sites\\piko-travel-site\\node_modules\\babel-core\\lib\\transformation\\pipeline.js:46:16)");
