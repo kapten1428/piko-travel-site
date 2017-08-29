@@ -11105,6 +11105,10 @@ var _StickyHeader = __webpack_require__(5);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
+var _OpenModal = __webpack_require__(7);
+
+var _OpenModal2 = _interopRequireDefault(_OpenModal);
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -11115,6 +11119,7 @@ var mobileMenu = new _MobileMenu2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".testimonials"), "65%");
 var stickyHeader = new _StickyHeader2.default();
+var openModal = new _OpenModal2.default();
 
 /***/ }),
 /* 3 */
@@ -11696,6 +11701,60 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }));
 
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var OpenModal = function () {
+	function OpenModal() {
+		_classCallCheck(this, OpenModal);
+
+		this.modal = (0, _jquery2.default)(".create-modal");
+		this.btnOpenModal = (0, _jquery2.default)(".open-modal");
+		this.btnCloseModal = (0, _jquery2.default)(".close-modal");
+		this.events();
+	}
+
+	_createClass(OpenModal, [{
+		key: "events",
+		value: function events() {
+			this.btnOpenModal.click(this.openModal.bind(this));
+			this.btnCloseModal.click(this.closeModal.bind(this));
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("create-modal--is-visible");
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("create-modal--is-visible");
+		}
+	}]);
+
+	return OpenModal;
+}();
+
+exports.default = OpenModal;
 
 /***/ })
 /******/ ]);
