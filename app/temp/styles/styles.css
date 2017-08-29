@@ -579,6 +579,12 @@ a{
 		max-width: 976px;
 	}
 
+.wrapper--narrow{
+		max-width: 500px;
+		margin-bottom: 1.4rem;
+		margin-top: 0;
+	}
+
 .wrapper--no-padding-until-medium{
 		padding-left: 0;
 		padding-right: 0;
@@ -887,6 +893,10 @@ F
 .section-title--blue{
 			font-size: 3.75rem
 	}
+	}
+
+.section-title--less-margin{
+		margin-bottom: 1rem;
 	}
 
 .section-title__icon{
@@ -1382,3 +1392,74 @@ Instead edit gulp/templates/sprites */
 		-webkit-transform: scale(1);
 		        transform: scale(1);
 	}
+
+.create-modal{
+	position: fixed;
+	z-index: 15;
+	background-color: rgba(255, 255, 255, .95);
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.create-modal__inner{
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		-webkit-transform: translateY(-60%);
+		        transform: translateY(-60%);
+		
+	}
+
+.create-modal__description{
+		text-align: center;
+		font-weight: 300;
+		line-height: 1.65
+	}
+
+.create-modal__close{
+		position: absolute;
+		top : 15px;
+		right: 15px;
+		font-size: 1.7rem;
+		-webkit-transform: scaleX(1.2);
+		        transform: scaleX(1.2);
+		-webkit-transform-origin: 100% 0;
+		        transform-origin: 100% 0;
+		color : #2f5572;
+	}
+
+.create-modal__close:hover{
+			color : #d59541;
+		}
+
+.social-icons{
+	text-align: center;
+}
+
+.social-icons__icon{
+		background-color: #d59541;
+		display: inline-block;
+		margin : 0 5px 5px 5px;
+		width: 33%;
+		height: 72px;
+		position: relative;
+	}
+
+@media (min-width: 530px){
+
+.social-icons__icon{
+			
+			width: 72px
+	}
+	}
+
+.social-icons__icon .icon{
+			display: block;
+			position: absolute;
+			top : 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+		}

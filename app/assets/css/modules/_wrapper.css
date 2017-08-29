@@ -9,6 +9,13 @@
 	&--medium{
 		max-width: 976px;
 	}
+
+	&--narrow{
+		max-width: 500px;
+		margin-bottom: 1.4rem;
+		margin-top: 0;
+	}
+
 	&--no-padding-until-medium{
 		padding-left: 0;
 		padding-right: 0;
