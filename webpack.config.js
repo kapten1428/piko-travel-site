@@ -1,7 +1,10 @@
 module.exports = {
-	entry : __dirname + '/App/assets/scripts/App.js',
+	entry : {
+		App : __dirname + '/App/assets/scripts/App.js',
+		Vendor : __dirname + '/App/assets/scripts/Vendor.js'
+	},
 	output : {
-		filename : 'App.js',
+		filename : '[name].js',
 		path : __dirname + '/App/temp/scripts'
 	},
 	module : {

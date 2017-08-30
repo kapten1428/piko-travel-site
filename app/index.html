@@ -7,6 +7,7 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link href="temp/styles/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="temp/scripts/Vendor.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -61,14 +62,14 @@
       <h3 class="headline headline--center headline--small headline--orange headline--narrow headline--light headline--b-margin-large">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
 
       <div class="wrapper wrapper--medium wrapper--b-margin">
-        <img sizes="(min-width:970px) 976px,100vw" srcset="assets/images/first-trip-low-res.jpg 565w,assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
+        <img class="lazyload" sizes="(min-width:970px) 976px,100vw" data-srcset="assets/images/first-trip-low-res.jpg 565w,assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
       </div>
       <div class="row row--gutter">
         <div class="row__medium-4 row__medium-4--larger row--equal-height-at-large">
           <picture>
-            <source sizes="404px" srcset="assets/images/our-start.jpg 404w,assets/images/our-start-hi-dpi.jpg 808w" media="(min-width:1020px)">
-             <source  srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait.jpg 764w" media="(min-width:800px)">
-              <img src="assets/images/our-start-landscape.jpg" alt="Our founder, Jane Doe">
+            <source class="lazyload" sizes="404px" data-srcset="assets/images/our-start.jpg 404w,assets/images/our-start-hi-dpi.jpg 808w" media="(min-width:1020px)">
+             <source class="lazyload" data-srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait.jpg 764w" media="(min-width:800px)">
+              <img class="lazyload" data-src="assets/images/our-start-landscape.jpg" alt="Our founder, Jane Doe">
             </picture>
 
           </div>
@@ -128,7 +129,7 @@
        <div class="row row--gutter row--t-padding row--gutter-small row--equal-height-at-large generic-content-container">
          <div class="row__large-4">
            <div class="testimonials">
-            <img sizes="160px" class="testimonials__photo" srcset="assets/images/testimonial-jane.jpg 160w,assets/images/testimonial-jane-hi-dpi.jpg 320w">
+            <img sizes="160px" class="lazyload testimonials__photo" data-srcset="assets/images/testimonial-jane.jpg 160w,assets/images/testimonial-jane-hi-dpi.jpg 320w">
             <h3 class="testimonials__title">Jane Doe</h3>
             <h3 class="testimonials__subtitle">9 Time Escaper</h3>
             <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
@@ -137,7 +138,7 @@
 
         <div class="row__large-4">
           <div class="testimonials">
-            <img class="testimonials__photo" src="assets/images/testimonial-john.jpg">
+            <img class="lazyload testimonials__photo" data-src="assets/images/testimonial-john.jpg">
             <h3 class="testimonials__title">John Smith</h3>
             <h3 class="testimonials__subtitle">4 Time Escaper</h3>
             <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
@@ -146,7 +147,7 @@
 
         <div class="row__large-4">
           <div class="testimonials testimonials--last">
-            <img class="testimonials__photo" src="assets/images/testimonial-cat.jpg">
+            <img class="lazyload testimonials__photo" data-srcs="assets/images/testimonial-cat.jpg">
             <h3 class="testimonials__title">Cat McKitty</h3>
             <h3 class="testimonials__subtitle">6 Time Escaper</h3>
             <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>

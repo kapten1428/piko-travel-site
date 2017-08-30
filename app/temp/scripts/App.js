@@ -11266,6 +11266,7 @@ var StickyHeader = function () {
 	function StickyHeader() {
 		_classCallCheck(this, StickyHeader);
 
+		this.lazyLoad = (0, _jquery2.default)(".lazyload");
 		this.siteHeader = (0, _jquery2.default)(".site-header");
 		this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
 		this.createHeaderWaypoint();
@@ -11275,9 +11276,17 @@ var StickyHeader = function () {
 		this.ourBeginning = (0, _jquery2.default)("#our-beginning");
 		this.createPageSectionWaypoint();
 		this.addSmoothScrolling();
+		this.refreshWaypoint();
 	}
 
 	_createClass(StickyHeader, [{
+		key: "refreshWaypoint",
+		value: function refreshWaypoint() {
+			this.lazyLoad.load(function () {
+				Waypoint.refreshAll();
+			});
+		}
+	}, {
 		key: "addSmoothScrolling",
 		value: function addSmoothScrolling() {
 			this.headerLink.smoothScroll();
