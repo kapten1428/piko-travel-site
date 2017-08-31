@@ -84,31 +84,32 @@
 			width: 63%;
 		}
 		
-		} F
-		/*Equal height until medium*/
-		&--equal-height-at-medium{
-			@mixin atMedium{
-				display: flex;
-			}
+	}
 
-			& > div{
-				float: none;
-				display: flex;
-			}
-
+	/*Equal height until medium*/
+	.flexbox &--equal-height-at-medium{
+		@mixin atMedium{
+			display: flex;
 		}
 
-		&--equal-height-at-large{
-			@mixin atLarge{
-				display: flex;
-			}
-
-			& > div{
-				float: none;
-				display: flex;
-			}
-
+		& > div{
+			float: none;
+			display: flex;
 		}
-
 
 	}
+
+	.flexbox &--equal-height-at-large{
+		@mixin atLarge{
+			display: flex;
+		}
+
+		& > div{
+			float: none;
+			display: flex;
+		}
+
+	}
+
+
+}
